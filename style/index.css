@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    height:10%;
+    display: flex;
+    align-items: center; 
+    background-color: #DEACF5;
+}
+
+#name {
+    border:0;
+    margin: 0;
+    padding-left: 2%;
+
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.half-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.section-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.text-container {
+    position: absolute;
+    text-align: center;
+    transform: translate(0%,125%);
+    color: black; 
+}
+
+.section-text {
+    padding: 10px;
+    background-color: #DEACF5;
+}
+
+#developer-section{
+    border-right: 10px solid #000;
+}
+
+#dance-section{
+    border-left: 10px solid #000;
+}
+
+#developer-section:hover {
+    border: 10px solid red;
+}
+
+#dance-section:hover {
+    border: 10px solid red;
+}
