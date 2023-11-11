@@ -1,0 +1,19 @@
+.nav_bar {
+    background-color:#DEACF5;
+    overflow: hidden;
+}
+
+.nav_bar a {
+    float: left;
+    display: block;
+    color: #28104E;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration:solid;
+    font-size: large;
+}
+
+.nav_bar a:hover {
+    background-color: #28104E;
+    color: white;
+}
