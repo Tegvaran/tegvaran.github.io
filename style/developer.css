@@ -104,9 +104,30 @@ header {
     width: 7rem;
     height: 7rem;
     transition: box-shadow 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .project-button img:hover{
+    transform: translate(-2px, -2px);
+}
+
+.socials-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+
+.socials-image {
+    height: 5rem;
+    width: 5rem;
+    transition: box-shadow 0.3s;
+    margin: 1rem;
+}
+
+.socials-image:hover{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transform: translate(-2px, -2px);
 }
