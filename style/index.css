@@ -9,6 +9,7 @@ header {
     display: flex;
     align-items: center; 
     background-color: #DEACF5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #name {
@@ -56,10 +57,30 @@ header {
     text-align: center;
     padding: 10px;
     background-color: #DEACF5;
+    border-radius: 1rem;
     margin: 0px;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pick-a-side-text{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 20%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: #DEACF5;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #developer-section{
