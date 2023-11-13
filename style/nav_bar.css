@@ -1,12 +1,12 @@
 .nav_bar {
-    background-color:#DEACF5;
+    background-color:#28104E;
     overflow: hidden;
 }
 
 .nav_bar a {
     float: left;
     display: block;
-    color: #28104E;
+    color: #DEACF5;
     text-align: center;
     padding: 14px 20px;
     text-decoration:solid;
@@ -14,6 +14,6 @@
 }
 
 .nav_bar a:hover {
-    background-color: #28104E;
-    color: white;
+    background-color: #DEACF5;
+    color: #28104E;
 }
