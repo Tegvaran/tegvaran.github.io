@@ -29,3 +29,42 @@ document.addEventListener("mousemove", (e) => {
     movePupil(leftPupil, leftEyeCenter.x, leftEyeCenter.y, svgRect);
     movePupil(rightPupil, rightEyeCenter.x, rightEyeCenter.y, svgRect);
   });
+
+  let mouse_hover_count = 0;
+  const max_count = 20; // max fill at 10 hovers (adjust as needed)
+
+  
+  const stop1 = document.getElementById('stop1');
+  const stop2 = document.getElementById('stop2');
+
+  
+  function updateGradientFill() {
+    const percentage = mouse_hover_count * 5 // e.g., 3 hovers = 30%
+    const offset = percentage;
+    stop1.setAttribute('offset', `${offset}%`);
+
+    if (mouse_hover_count > max_count  / 2) {
+        const offset2 = (mouse_hover_count - max_count / 2) * 5;
+        console.log(offset2);
+        stop2.setAttribute('offset', `${offset2}%`);
+    }
+    
+  }
+  
+  function onHover(color) {
+    console.log(mouse_hover_count);
+    mouse_hover_count++;
+    stop1.setAttribute('stop-color', color);
+
+    updateGradientFill();
+  }
+  
+  document.getElementById('dancer-button').addEventListener('mouseenter', () => {
+    onHover('#9B59B6');
+  });
+  
+  document.getElementById('developer-button').addEventListener('mouseenter', () => {
+    onHover('#4A90E2');
+  });
+  
+  

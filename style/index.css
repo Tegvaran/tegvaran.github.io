@@ -41,10 +41,60 @@ body, html {
     min-height: 100vh; /* full screen height */
 }
 
+.button-group {
+    margin-top: 1rem;
+    display: flex;
+    gap: 5rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-10rem);
+}
+
+#dancer-button {
+    background-color: #9B59B6;
+}
+
+#developer-button {
+    background-color: #4A90E2;
+}
+.nav-button {
+    color: #F5F5F5;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#dancer-button:hover {
+    background-color: #8e44ad;
+    transform: scale(1.5);
+}
+
+#developer-button:hover {
+    background-color: #357ABD;
+    transform: scale(1.5);
+}
+
+#stop1 {
+    transition: offset 1s ease, stop-color 0.5s ease;
+  }
+
+  /* CSS for mobile*/
 @media (max-width: 600px) {
     .logo {
         max-width: 20rem;
+        transform: translateY(-5rem);
     }
+
+    .button-group {
+        flex-direction: column;
+        gap: 2rem;
+        transform: translateY(-20rem);
+    }
+
 }
 
   @media (min-width: 48rem) { /* 768px */
